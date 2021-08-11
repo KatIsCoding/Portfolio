@@ -1,0 +1,49 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  flex-direction: row;
+}
+
+.toolbar div {
+  margin: 0 15px;
+}
+
+.introduction {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  flex-direction: column;
+  background-color: white;
+  background-image: url("./src/header/headerimg.svg");
+  background-size: cover;
+}
+
+.socials {
+  justify-content: space-between;
+}
+
+.mainText {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.mainText p:first-child {
+  margin-bottom: 0;
+}
+
+.secondaryText {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin: 58px 24px 60px 24px;
+}
+
+#secondMainSentence {
+  color: #ff6163;
+  margin-top: 0;
+}
+
+#welcomeText {
+  font-weight: 600;
+}
