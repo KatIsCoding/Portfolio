@@ -16,6 +16,8 @@
   background-color: white;
   background-image: url("./src/header/headerimg.png");
   background-size: cover;
+  text-align: center;
+  font-size: 30px;
 }
 
 .socials {
