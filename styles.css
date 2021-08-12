@@ -14,17 +14,22 @@
   font-family: "Inter", sans-serif;
   flex-direction: column;
   background-color: white;
-  background-image: url("./src/header/headerimg.svg");
+  background-image: url("./src/header/headerimg.png");
   background-size: cover;
 }
 
 .socials {
-  justify-content: space-between;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-inline-start: 0px;
+  margin: 0 50px;
 }
 
 .mainText {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -40,10 +45,12 @@
 }
 
 #secondMainSentence {
-  color: #ff6163;
+  color: #36b37e;
   margin-top: 0;
 }
 
 #welcomeText {
   font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
