@@ -6,7 +6,7 @@
 
 ![screenshot](./screenshot.png)
 
-Webpage I use to show my work and selling my services.
+Webpage I use to show my work and selling my services. The webpage until now is a very basic combination of both HTML and CSS but it will continue to improve over time .
 
 ## Built With
 
@@ -31,9 +31,14 @@ cd into the cloned folder and run npx hint. and npx stylelint "**/*.{css,scss}"
 
 👤 **Fabrizio**
 
-- GitHub: [@githubhandle](https://github.com/KatIsCoding)
-- Twitter: [@twitterhandle](https://twitter.com/fabriziogr211)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fabrizio-gomez-6a00801a3/)
+- GitHub: [@KatIsCoding](https://github.com/KatIsCoding)
+- Twitter: [@fabrizio](https://twitter.com/fabriziogr211)
+- LinkedIn: [Fabrizio](https://www.linkedin.com/in/fabrizio-gomez-6a00801a3/)
+
+## Latest Issue
+
+> The following links to the latest issue inside the project.
+[LatestIssue](https://github.com/KatIsCoding/Portfolio/pull/1)
 
 ## Show your support
 
