@@ -64,6 +64,13 @@ body {
 
 .workCard {
   height: 474px;
+  width: 327px;
+}
+
+.workTags {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .workTags li {
@@ -81,8 +88,8 @@ body {
 
 .workInfo {
   margin: 0;
-  width: 98%;
-  height: 48%;
+  width: 327px;
+  height: 222px;
   background-color: white;
   border-radius: 9px;
   align-self: center;
@@ -90,7 +97,8 @@ body {
 
 .imagePlaceHolder {
   /* This is an add-on for the recent works cards */
-  height: 50%;
+
+  height: 252px;
   width: 100%;
 }
 
@@ -133,6 +141,7 @@ body {
   outline-width: 3px;
   border-color: #d0d9d4;
   align-content: center;
+  border: 1px solid #d0d9d4;
 }
 
 .cardHeader {
@@ -146,10 +155,9 @@ body {
 .tagsHandler {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding: 0;
+  padding-inline-start: 0;
   width: 100%;
 }
 
@@ -223,7 +231,7 @@ button:hover {
   grid-auto-rows: 352px;
 }
 
-.aboutmeHeader {
+.sectionHeader.aboutmeHeader {
   background-image: url("./src/misc/aboutme-illustration-mobile.png");
   background-size: contain;
 }
@@ -236,6 +244,9 @@ button:hover {
   justify-content: center;
   list-style-type: none;
   align-content: center;
+  row-gap: 8px;
+  column-gap: 8px;
+  margin-bottom: 24px;
 }
 
 .aboutmeTags li {
@@ -243,8 +254,6 @@ button:hover {
   padding: 10px;
   border-radius: 9px;
   text-align: center;
-  margin: 5px 10px;
-  margin-right: 1em;
   position: relative;
   bottom: -25px;
 }
