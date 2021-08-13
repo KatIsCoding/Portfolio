@@ -1,7 +1,10 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;
-  font-family: "Inter", sans-serif;
   flex-direction: row;
 }
 
@@ -9,9 +12,72 @@
   margin: 0 15px;
 }
 
+.centeredGrid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 327px;
+  grid-gap: 24px;
+}
+
+.centeredGrid h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: #172B4D;
+  
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #EBF0EE;
+  border-radius: 9px;
+  flex-direction: column;
+  outline: #D0D9D4;
+  outline-width: 3px;
+  border-color: #D0D9D4;
+  align-content: center;
+}
+
+.workCard {
+  height: 474px;
+  
+}
+
+.tagsHandler {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;  
+  
+}
+.arrow {
+  margin-top: 64px;
+}
+
+.workTags li {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3A4A42;
+  padding: 10px;
+  background-color: #EBF0EE;
+  border-radius: 9px;
+}
+
 .introduction {
   display: flex;
-  font-family: "Inter", sans-serif;
   flex-direction: column;
   background-color: white;
   background-image: url("./src/header/headerimg.png");
@@ -20,6 +86,10 @@
   font-size: 30px;
 }
 
+.introduction h1 {
+  margin-top: 74px;
+  margin-bottom: 0;
+}
 .socials {
   list-style: none;
   display: flex;
@@ -35,9 +105,16 @@
   text-align: center;
 }
 
-.mainText p:first-child {
-  margin-bottom: 0;
+.workInfo {
+  margin: 0;
+  width: 98%;
+  height: 48%;
+  background-color: white;
+  border-radius: 9px;
+  align-self: center;
 }
+
+
 
 .secondaryText {
   font-weight: 400;
@@ -46,13 +123,114 @@
   margin: 58px 24px 60px 24px;
 }
 
+.imagePlaceHolder {
+  height: 50%;
+  width: 100%;
+  /*background-color: ;*/
+  /*background-color: red;*/
+}
+
+.button {
+  width: auto;
+  height: 48px;
+  background-color: #36B37F;
+  border-width: 0;
+  border-radius: 9px;
+  transition-duration: 0.3s;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  justify-self: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.button:hover {
+  box-shadow: rgba(75, 133, 109, 0.24);
+
+}
+
+.button:active {
+  background-color: #008552;
+}
+
+.aboutme {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  grid-gap: 28px;
+  grid-auto-rows: 352px;
+
+}
+
+.sectionHeader h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172B4D;
+  margin-bottom: 0;
+}
+
+.sectionHeader h3 {
+  font-weight: 400;
+  color: #42526E;
+  font-size: 20px;
+}
+
+
+.aboutmeHeader {
+  color: #344563;
+}
+
 #secondMainSentence {
   color: #36b37e;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 #welcomeText {
   font-weight: 600;
   text-decoration: none;
   color: black;
+}
+#indicator {
+  width: 48px;
+  height: 4px;
+  justify-self: center;
+  background: #36B37E;
+  border-radius: 24px;
+  margin-bottom: 62px;
+}
+#workName {
+  color: #3a4a42;
+}
+
+.cardHeader {
+  line-height: 32px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.aboutmeTags {
+  color: #36B37E;
+  font-weight: 600;
+  font-size: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  align-content: center;
+}
+
+
+.aboutmeTags li {
+  background-color: white;
+  padding: 10px;
+  border-radius: 9px;
+  text-align: center;
+  margin: 5px 10px;
+  margin-right: 1em;
+  position: relative;
+  bottom: -25px;
 }
