@@ -1,7 +1,13 @@
+/* A large file should have reference comments!! */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Header Section */
+
 .toolbar {
   display: flex;
   justify-content: space-between;
-  font-family: "Inter", sans-serif;
   flex-direction: row;
 }
 
@@ -9,15 +15,27 @@
   margin: 0 15px;
 }
 
+#welcomeText {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+/* Introduction Section */
+
 .introduction {
   display: flex;
-  font-family: "Inter", sans-serif;
   flex-direction: column;
   background-color: white;
   background-image: url("./src/header/headerimg.png");
   background-size: cover;
   text-align: center;
   font-size: 30px;
+}
+
+.introduction h1 {
+  margin-top: 74px;
+  margin-bottom: 0;
 }
 
 .socials {
@@ -27,16 +45,6 @@
   justify-content: space-around;
   padding-inline-start: 0;
   margin: 0 50px;
-}
-
-.mainText {
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-}
-
-.mainText p:first-child {
-  margin-bottom: 0;
 }
 
 .secondaryText {
@@ -49,10 +57,203 @@
 #secondMainSentence {
   color: #36b37e;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
-#welcomeText {
+/* Recent Works Section */
+
+.workCard {
+  height: 474px;
+  width: 327px;
+}
+
+.workTags {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.workTags li {
+  font-size: 12px;
   font-weight: 600;
-  text-decoration: none;
-  color: black;
+  text-align: center;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  padding: 10px;
+  background-color: #ebf0ee;
+  border-radius: 9px;
+}
+
+.workInfo {
+  margin: 0;
+  width: 327px;
+  height: 222px;
+  background-color: white;
+  border-radius: 9px;
+  align-self: center;
+}
+
+.imagePlaceHolder {
+  /* This is an add-on for the recent works cards */
+
+  height: 252px;
+  width: 100%;
+}
+
+#workName {
+  color: #3a4a42;
+}
+
+/* Reusable */
+
+/* Grid Creator */
+
+.centeredGrid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 327px;
+  grid-gap: 24px;
+}
+
+.centeredGrid h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: #172b4d;
+}
+
+/* Card creator */
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #ebf0ee;
+  border-radius: 9px;
+  flex-direction: column;
+  outline: #d0d9d4;
+  outline-width: 3px;
+  border-color: #d0d9d4;
+  align-content: center;
+  border: 1px solid #d0d9d4;
+}
+
+.cardHeader {
+  line-height: 32px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Tags creator/handler */
+
+.tagsHandler {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-inline-start: 0;
+  width: 100%;
+}
+
+.arrow {
+  margin-top: 64px;
+}
+
+/* Button */
+
+.button {
+  width: auto;
+  height: 48px;
+  background-color: #36b37f;
+  border-width: 0;
+  border-radius: 9px;
+  transition-duration: 0.3s;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  justify-self: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+/* Button Methods */
+
+button:hover {
+  box-shadow: 0 8px 16px 0 #36b37f3d;
+}
+
+.button:active {
+  background-color: #008552;
+}
+
+/* Section header formatter */
+
+.sectionHeader h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  margin-bottom: 0;
+}
+
+.sectionHeader h3 {
+  font-weight: 400;
+  color: #42526e;
+  font-size: 20px;
+}
+
+/* Small vecor formatter */
+
+#indicator {
+  width: 48px;
+  height: 4px;
+  justify-self: center;
+  background: #36b37e;
+  border-radius: 24px;
+  margin-bottom: 62px;
+}
+
+/* About Me Section */
+
+.aboutme {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  grid-gap: 28px;
+  grid-auto-rows: 352px;
+}
+
+.sectionHeader.aboutmeHeader {
+  background-image: url("./src/misc/aboutme-illustration-mobile.png");
+  background-size: contain;
+}
+
+.aboutmeTags {
+  color: #36b37e;
+  font-weight: 600;
+  font-size: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  align-content: center;
+  row-gap: 8px;
+  column-gap: 8px;
+  margin-bottom: 24px;
+}
+
+.aboutmeTags li {
+  background-color: white;
+  padding: 10px;
+  border-radius: 9px;
+  text-align: center;
+  position: relative;
+  bottom: -25px;
 }
