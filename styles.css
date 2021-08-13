@@ -1,6 +1,9 @@
+/* A large file should have reference comments!! */
 body {
   font-family: "Inter", sans-serif;
 }
+
+/* Header Section */
 
 .toolbar {
   display: flex;
@@ -12,69 +15,13 @@ body {
   margin: 0 15px;
 }
 
-.centeredGrid {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  grid-template-columns: 327px;
-  grid-gap: 24px;
-}
-
-.centeredGrid h2 {
-  font-weight: 700;
-  font-size: 40px;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  color: #172B4D;
-  
-}
-
-.card {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  background-color: #EBF0EE;
-  border-radius: 9px;
-  flex-direction: column;
-  outline: #D0D9D4;
-  outline-width: 3px;
-  border-color: #D0D9D4;
-  align-content: center;
-}
-
-.workCard {
-  height: 474px;
-  
-}
-
-.tagsHandler {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  width: 100%;  
-  
-}
-.arrow {
-  margin-top: 64px;
-}
-
-.workTags li {
-  font-size: 12px;
+#welcomeText {
   font-weight: 600;
-  text-align: center;
-  font-style: normal;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #3A4A42;
-  padding: 10px;
-  background-color: #EBF0EE;
-  border-radius: 9px;
+  text-decoration: none;
+  color: black;
 }
+
+/* Introduction Section */
 
 .introduction {
   display: flex;
@@ -90,6 +37,7 @@ body {
   margin-top: 74px;
   margin-bottom: 0;
 }
+
 .socials {
   list-style: none;
   display: flex;
@@ -99,10 +47,36 @@ body {
   margin: 0 50px;
 }
 
-.mainText {
-  font-weight: 700;
-  font-size: 30px;
+.secondaryText {
+  font-weight: 400;
+  font-size: 20px;
   text-align: center;
+  margin: 58px 24px 60px 24px;
+}
+
+#secondMainSentence {
+  color: #36b37e;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Recent Works Section */
+
+.workCard {
+  height: 474px;
+}
+
+.workTags li {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  padding: 10px;
+  background-color: #ebf0ee;
+  border-radius: 9px;
 }
 
 .workInfo {
@@ -114,26 +88,81 @@ body {
   align-self: center;
 }
 
-
-
-.secondaryText {
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  margin: 58px 24px 60px 24px;
-}
-
 .imagePlaceHolder {
+  /* This is an add-on for the recent works cards */
   height: 50%;
   width: 100%;
-  /*background-color: ;*/
-  /*background-color: red;*/
 }
+
+#workName {
+  color: #3a4a42;
+}
+
+/* Reusable */
+
+/* Grid Creator */
+
+.centeredGrid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 327px;
+  grid-gap: 24px;
+}
+
+.centeredGrid h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: #172b4d;
+}
+
+/* Card creator */
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #ebf0ee;
+  border-radius: 9px;
+  flex-direction: column;
+  outline: #d0d9d4;
+  outline-width: 3px;
+  border-color: #d0d9d4;
+  align-content: center;
+}
+
+.cardHeader {
+  line-height: 32px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Tags creator/handler */
+
+.tagsHandler {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.arrow {
+  margin-top: 64px;
+}
+
+/* Button */
 
 .button {
   width: auto;
   height: 48px;
-  background-color: #36B37F;
+  background-color: #36b37f;
   border-width: 0;
   border-radius: 9px;
   transition-duration: 0.3s;
@@ -147,14 +176,43 @@ body {
   font-style: normal;
 }
 
-.button:hover {
-  box-shadow: rgba(75, 133, 109, 0.24);
+/* Button Methods */
 
+button:hover {
+  box-shadow: 0 8px 16px 0 #36b37f3d;
 }
 
 .button:active {
   background-color: #008552;
 }
+
+/* Section header formatter */
+
+.sectionHeader h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  margin-bottom: 0;
+}
+
+.sectionHeader h3 {
+  font-weight: 400;
+  color: #42526e;
+  font-size: 20px;
+}
+
+/* Small vecor formatter */
+
+#indicator {
+  width: 48px;
+  height: 4px;
+  justify-self: center;
+  background: #36b37e;
+  border-radius: 24px;
+  margin-bottom: 62px;
+}
+
+/* About Me Section */
 
 .aboutme {
   display: grid;
@@ -163,58 +221,14 @@ body {
   text-align: center;
   grid-gap: 28px;
   grid-auto-rows: 352px;
-
 }
-
-.sectionHeader h2 {
-  font-weight: 700;
-  font-size: 40px;
-  color: #172B4D;
-  margin-bottom: 0;
-}
-
-.sectionHeader h3 {
-  font-weight: 400;
-  color: #42526E;
-  font-size: 20px;
-}
-
 
 .aboutmeHeader {
   color: #344563;
 }
 
-#secondMainSentence {
-  color: #36b37e;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-#welcomeText {
-  font-weight: 600;
-  text-decoration: none;
-  color: black;
-}
-#indicator {
-  width: 48px;
-  height: 4px;
-  justify-self: center;
-  background: #36B37E;
-  border-radius: 24px;
-  margin-bottom: 62px;
-}
-#workName {
-  color: #3a4a42;
-}
-
-.cardHeader {
-  line-height: 32px;
-  font-weight: 600;
-  font-size: 24px;
-}
-
 .aboutmeTags {
-  color: #36B37E;
+  color: #36b37e;
   font-weight: 600;
   font-size: 12px;
   flex-wrap: wrap;
@@ -222,7 +236,6 @@ body {
   list-style-type: none;
   align-content: center;
 }
-
 
 .aboutmeTags li {
   background-color: white;
