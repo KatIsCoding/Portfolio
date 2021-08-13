@@ -224,7 +224,8 @@ button:hover {
 }
 
 .aboutmeHeader {
-  color: #344563;
+  background-image: url("./src/misc/aboutme-illustration-mobile.png");
+  background-size: contain;
 }
 
 .aboutmeTags {
