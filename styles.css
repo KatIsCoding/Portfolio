@@ -4,7 +4,6 @@ body {
 }
 
 /* Header Section */
-
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -22,7 +21,6 @@ body {
 }
 
 /* Introduction Section */
-
 .introduction {
   display: flex;
   flex-direction: column;
@@ -153,9 +151,9 @@ body {
 /* Tags creator/handler */
 
 .tagsHandler {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*align-items: center;*/
   list-style: none;
   padding-inline-start: 0;
   width: 100%;
@@ -186,7 +184,7 @@ body {
 
 /* Button Methods */
 
-button:hover {
+.button:hover {
   box-shadow: 0 8px 16px 0 #36b37f3d;
 }
 
@@ -254,6 +252,9 @@ button:hover {
   padding: 10px;
   border-radius: 9px;
   text-align: center;
+  float:left;
+  margin-left: 13px;
+  margin-right: 8px;
   position: relative;
   bottom: -25px;
 }
