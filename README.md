@@ -21,12 +21,18 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 Web browser (Google Chrome, Firefox, Safari)
 ### Setup
-git clone the repository
+git clone https://github.com/KatIsCoding/Portfolio
 ### Usage
 Open the file "index.html" with your browser
 ### Run tests
-cd into the cloned folder and run npx hint. and npx stylelint "**/*.{css,scss}"
-
+cd into the cloned folder and run 
+```bash
+npx hint .
+```
+ and 
+ ```bash
+npx stylelint "**/*.{css,scss}"
+```
 ## Authors
 
 👤 **Fabrizio**
