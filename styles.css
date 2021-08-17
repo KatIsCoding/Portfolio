@@ -314,6 +314,10 @@ footer h5 {
   border: 1px solid #d0d9d4;
 }
 
-.userinput:invalid {
-  border: red solid 1px;
+#userMessage {
+  border: 1px solid #60C095;
+}
+
+#sendContactMeForm {
+  cursor: pointer;
 }
