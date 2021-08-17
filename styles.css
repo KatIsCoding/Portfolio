@@ -257,3 +257,64 @@ button:hover {
   position: relative;
   bottom: -25px;
 }
+
+footer {
+  text-align: center;
+}
+
+footer h5 {
+  color: #42526e;
+  font-size: 20px;
+  line-height: 32px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Contact Me Section */
+.contactme {
+  background-image: url("./src/misc/illustration-contact-form.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.contactme h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.contactme button {
+  margin-bottom: 58px;
+}
+
+#contactmeForm {
+  display: flex;
+  flex-direction: column;
+  height: 282px;
+  justify-content: space-around;
+}
+
+#contactmeForm * {
+  height: 48px;
+  border-radius: 4px;
+  padding-left: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+::placeholder {
+  color: #6b778c;
+}
+
+#userMessage {
+  height: 114px !important;
+  border: 1px solid #60c095;
+}
+
+.userinput:valid {
+  border: 1px solid #d0d9d4;
+}
+
+#sendContactMeForm {
+  cursor: pointer;
+}
