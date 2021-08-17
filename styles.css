@@ -308,14 +308,11 @@ footer h5 {
 
 #userMessage {
   height: 114px !important;
+  border: 1px solid #60c095;
 }
 
 .userinput:valid {
   border: 1px solid #d0d9d4;
-}
-
-#userMessage {
-  border: 1px solid #60C095;
 }
 
 #sendContactMeForm {
