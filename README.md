@@ -38,7 +38,7 @@ cd into the cloned folder and run npx hint. and npx stylelint "**/*.{css,scss}"
 ## Latest Issue
 
 > The following links to the latest issue inside the project.
-[LatestIssue](https://github.com/KatIsCoding/Portfolio/pull/2)
+[LatestIssue](https://github.com/KatIsCoding/Portfolio/pull/3)
 
 ## Show your support
 
