@@ -162,6 +162,13 @@ body {
   align-content: center;
   border: 1px solid #d0d9d4;
   justify-self: center;
+  max-width: 369px;
+  min-width: 369px;
+}
+
+.cardHandler {
+  justify-items: center;
+  align-items: center;
 }
 
 .cardHeader {
@@ -306,6 +313,7 @@ footer h5 {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  margin-top: 169px;
 }
 
 .contactme h2 {
@@ -339,11 +347,15 @@ footer h5 {
 
 #userMessage {
   height: 114px !important;
-  border: 1px solid #60c095;
 }
 
-.userinput:valid {
+.userinput {
   border: 1px solid #d0d9d4;
+}
+
+.userinput:focus {
+  outline: none;
+  border: 1px solid #60c095;
 }
 
 #sendContactMeForm {
@@ -353,9 +365,17 @@ footer h5 {
 }
 
 @media screen and (min-width: 720px) {
+  .aboutmeCard {
+    justify-self: center;
+    align-self: normal;
+  }
+
   .introduction {
     background-image: url("./src/header/headerimgDesktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
+    height: 1000px;
   }
 
   #indicator {
