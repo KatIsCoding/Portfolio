@@ -60,7 +60,7 @@ body {
   margin: 58px 24px 60px 24px;
 }
 
-#secondMainSentence {
+.secondMainSentence {
   color: #36b37e;
   margin-top: 0;
   margin-bottom: 0;
@@ -163,12 +163,23 @@ body {
   border: 1px solid #d0d9d4;
   justify-self: center;
   max-width: 369px;
-  min-width: 369px;
+
+  /* Animations */
+  animation-name: appearance;
+  animation-duration: 3s;
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+    margin-bottom: 100%;
+  }
 }
 
 .cardHandler {
   justify-items: center;
   align-items: center;
+  animation-name: appearance;
 }
 
 .cardHeader {
