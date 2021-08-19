@@ -45,6 +45,12 @@ body {
   justify-content: space-around;
   padding-inline-start: 0;
   margin: 0 50px;
+  max-width: 97px;
+  align-self: center;
+}
+
+.socials li {
+  margin: 0 10.5%;
 }
 
 .secondaryText {
@@ -61,6 +67,19 @@ body {
 }
 
 /* Recent Works Section */
+
+.recentWorks {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 120%;
+}
+
+.recentWorks h2 {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  max-width: 100%;
+}
 
 .workCard {
   height: 474px;
@@ -88,7 +107,7 @@ body {
 
 .workInfo {
   margin: 0;
-  width: 327px;
+  width: 100%;
   height: 222px;
   background-color: white;
   border-radius: 9px;
@@ -142,6 +161,14 @@ body {
   border-color: #d0d9d4;
   align-content: center;
   border: 1px solid #d0d9d4;
+  justify-self: center;
+  max-width: 369px;
+  min-width: 369px;
+}
+
+.cardHandler {
+  justify-items: center;
+  align-items: center;
 }
 
 .cardHeader {
@@ -214,16 +241,15 @@ button:hover {
 #indicator {
   width: 48px;
   height: 4px;
-  justify-self: center;
   background: #36b37e;
   border-radius: 24px;
   margin-bottom: 62px;
+  margin-left: 46%;
 }
 
 /* About Me Section */
 
 .aboutme {
-  display: grid;
   justify-content: center;
   align-content: center;
   text-align: center;
@@ -233,7 +259,13 @@ button:hover {
 
 .sectionHeader.aboutmeHeader {
   background-image: url("./src/misc/aboutme-illustration-mobile.png");
-  background-size: contain;
+  background-size: 100%;
+  margin: 80px 0;
+  background-repeat: no-repeat;
+}
+
+.aboutmeCard {
+  justify-self: normal;
 }
 
 .aboutmeTags {
@@ -246,7 +278,7 @@ button:hover {
   align-content: center;
   row-gap: 8px;
   column-gap: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 50px;
 }
 
 .aboutmeTags li {
@@ -259,7 +291,12 @@ button:hover {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 footer h5 {
@@ -276,6 +313,7 @@ footer h5 {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  margin-top: 169px;
 }
 
 .contactme h2 {
@@ -291,12 +329,13 @@ footer h5 {
 #contactmeForm {
   display: flex;
   flex-direction: column;
-  height: 282px;
+  height: 400px;
   justify-content: space-around;
 }
 
 #contactmeForm * {
   height: 48px;
+  max-width: 90%;
   border-radius: 4px;
   padding-left: 12px;
   font-family: "Inter", sans-serif;
@@ -308,13 +347,62 @@ footer h5 {
 
 #userMessage {
   height: 114px !important;
-  border: 1px solid #60c095;
 }
 
-.userinput:valid {
+.userinput {
   border: 1px solid #d0d9d4;
+}
+
+.userinput:focus {
+  outline: none;
+  border: 1px solid #60c095;
 }
 
 #sendContactMeForm {
   cursor: pointer;
+  width: fit-content;
+  align-self: center;
+}
+
+@media screen and (min-width: 720px) {
+  .aboutmeCard {
+    justify-self: center;
+    align-self: normal;
+  }
+
+  .introduction {
+    background-image: url("./src/header/headerimgDesktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 1000px;
+  }
+
+  #indicator {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .secondaryText {
+    width: 63%;
+  }
+
+  .centeredGrid {
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 5%;
+  }
+
+  .contactme {
+    grid-template-columns: 50% 50%;
+    grid-gap: 1%;
+  }
+
+  #sendContactMeForm {
+    align-self: flex-start;
+  }
+
+  .workCard {
+    width: 100%;
+  }
 }
