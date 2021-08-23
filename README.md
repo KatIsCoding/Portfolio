@@ -8,6 +8,10 @@
 
 Webpage I use to show my work and selling my services. The webpage until now is a very basic combination of both HTML and CSS but it will continue to improve over time .
 
+
+## Live Demo!!
+[My Website Link](https://katiscoding.github.io/Portfolio/)
+
 ## Built With
 
 - HTML&CSS
@@ -44,7 +48,7 @@ npx stylelint "**/*.{css,scss}"
 ## Latest Issue
 
 > The following links to the latest issue inside the project.
-[LatestIssue](https://github.com/KatIsCoding/Portfolio/pull/4)
+[LatestIssue](https://github.com/KatIsCoding/Portfolio/pull/7)
 
 ## Show your support
 

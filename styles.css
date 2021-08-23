@@ -377,7 +377,6 @@ footer h5 {
 
 @media screen and (min-width: 720px) {
   .aboutmeCard {
-    justify-self: center;
     align-self: normal;
   }
 
