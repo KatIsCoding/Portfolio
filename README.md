@@ -48,7 +48,7 @@ npx stylelint "**/*.{css,scss}"
 ## Latest Issue
 
 > The following links to the latest issue inside the project.
-[LatestIssue](https://github.com/KatIsCoding/Portfolio/pull/4)
+[LatestIssue](https://github.com/KatIsCoding/Portfolio/pull/7)
 
 ## Show your support
 
