@@ -11,9 +11,50 @@ body {
   flex-direction: row;
 }
 
-.toolbar div {
+.menuButton {
   margin: 0 15px;
 }
+
+.menu {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 0;
+  z-index: 1;
+  overflow: hidden; /* To make it hidden */
+  transition: 0.5s;
+  background-color: #E5E5E5;
+  /*order-radius: 50px;*/
+}
+
+.menu-content{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+  height: 90%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: #3A4A42;
+  font-size: 32px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  font-weight: 600;
+  line-height: 44px;
+  font-style: normal;
+}
+
+.menu-close {
+  position: relative;
+  top: 20px;
+  left: 80%;
+}
+
 
 #welcomeText {
   font-weight: 600;
