@@ -1,4 +1,8 @@
 /* A large file should have reference comments!! */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -9,6 +13,22 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  justify-self: center;
+  align-self: center;
+}
+
+.desktop-toolbar {
+  display: none;
+}
+
+.desktop-toolbar a {
+  text-decoration: none;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 20px;
+  font-weight: 600;
+  color: #344563;
+  margin-left: 20px;
 }
 
 .menuButton {
@@ -417,6 +437,22 @@ footer h5 {
 }
 
 @media screen and (min-width: 720px) {
+  .toolbar {
+    justify-content: center;
+  }
+
+  .desktop-toolbar {
+    display: initial;
+  }
+
+  #welcomeText {
+    display: none;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
   .aboutmeCard {
     align-self: normal;
   }
