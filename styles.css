@@ -24,11 +24,12 @@ body {
   z-index: 1;
   overflow: hidden; /* To make it hidden */
   transition: 0.5s;
-  background-color: #E5E5E5;
-  /*order-radius: 50px;*/
+  background-color: #e5e5e5;
+
+  /* order-radius: 50px; */
 }
 
-.menu-content{
+.menu-content {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -40,7 +41,7 @@ body {
 
 .menu-content a {
   text-decoration: none;
-  color: #3A4A42;
+  color: #3a4a42;
   font-size: 32px;
   margin-bottom: 40px;
   margin-left: 30px;
@@ -54,7 +55,6 @@ body {
   top: 20px;
   left: 80%;
 }
-
 
 #welcomeText {
   font-weight: 600;
