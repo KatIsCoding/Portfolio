@@ -1,4 +1,8 @@
 /* A large file should have reference comments!! */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -9,10 +13,67 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  justify-self: center;
+  align-self: center;
 }
 
-.toolbar div {
+.desktop-toolbar {
+  display: none;
+}
+
+.desktop-toolbar a {
+  text-decoration: none;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 20px;
+  font-weight: 600;
+  color: #344563;
+  margin-left: 20px;
+}
+
+.menuButton {
   margin: 0 15px;
+}
+
+.menu {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 0;
+  z-index: 1;
+  overflow: hidden; /* To make it hidden */
+  transition: 0.5s;
+  background-color: #e5e5e5;
+
+  /* order-radius: 50px; */
+}
+
+.menu-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+  height: 90%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: #3a4a42;
+  font-size: 32px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  font-weight: 600;
+  line-height: 44px;
+  font-style: normal;
+}
+
+.menu-close {
+  position: relative;
+  top: 20px;
+  left: 80%;
 }
 
 #welcomeText {
@@ -376,6 +437,22 @@ footer h5 {
 }
 
 @media screen and (min-width: 720px) {
+  .toolbar {
+    justify-content: center;
+  }
+
+  .desktop-toolbar {
+    display: initial;
+  }
+
+  #welcomeText {
+    display: none;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
   .aboutmeCard {
     align-self: normal;
   }
