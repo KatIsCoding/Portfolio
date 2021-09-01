@@ -258,7 +258,13 @@
                 <input class="userinput" type="text" name="name" id="userName" maxlength="30" placeholder="Full name" required>
                 <input class="userinput" type="email" name="email" id="userEmail" placeholder="Email address" required>
                 <textarea class="userinput" name="message" id="userMessage" cols="30" rows="10" maxlength="500" placeholder="Enter your message" required></textarea>
-                <button id="sendContactMeForm" class="button" type="submit" form="contactmeForm">Get In touch</button>
+                <div id="sendContactMeForm">
+                    <button id="sendContactMeFormButton" class="button" type="submit" form="contactmeForm">Get In touch</button>
+                    <span id="submission-error">The email not in lower case</span> 
+                </div>
+                
+
+                
             </form>
             
         </section>

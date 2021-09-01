@@ -143,12 +143,27 @@ function toggleModal(workId) {
 }
 
 function assignEventHandlers() {
+  // Modals
   const workcards = document.getElementsByClassName('workCard');
   Array.prototype.forEach.call(workcards, (elem) => {
     const workId = elem.id;
     elem.getElementsByClassName('workInfo')[0].getElementsByTagName('button')[0].addEventListener('click', () => {
       toggleModal(workId);
     }, false);
+  });
+
+  // Contact me form
+
+  const contactMeForm = document.getElementById('contactmeForm');
+  contactMeForm.addEventListener('submit', (event) => {
+    const email = document.getElementById('userEmail');
+    if (email.value !== email.value.toLowerCase()) {
+      const errorMessage = document.getElementById('submission-error');
+      errorMessage.style.visibility = 'visible';
+      event.preventDefault();
+    } else {
+      contactMeForm.submit();
+    }
   });
 }
 

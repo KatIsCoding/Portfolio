@@ -323,6 +323,9 @@ main {
   font-size: 24px;
 }
 
+
+
+
 /* Tags creator/handler */
 
 .tagsHandler {
@@ -463,6 +466,13 @@ footer h5 {
   margin-top: 169px;
 }
 
+#submission-error {
+  visibility: hidden;
+  display: table-cell;
+  position: absolute;
+  color: red;
+}
+
 .contactme h2 {
   font-weight: 700;
   font-size: 40px;
@@ -505,6 +515,10 @@ footer h5 {
   border: 1px solid #60c095;
 }
 
+#sendContactMeFormButton {
+  justify-self: center;
+}
+
 #sendContactMeForm {
   cursor: pointer;
   width: fit-content;
@@ -512,6 +526,10 @@ footer h5 {
 }
 
 @media screen and (min-width: 720px) {
+  #submission-error {
+    display: inline;
+  }
+
   .toolbar {
     justify-content: center;
   }
