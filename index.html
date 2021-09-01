@@ -26,273 +26,309 @@
     <script src="index.js">
         
     </script>
+    <!--Awesome Fonts!-->
+    
     <title>Fabrizio's Portfolio</title>
 </head>
-<body>
-    <header>
-        <nav class="toolbar">
-            <div class="desktop-toolbar">
-                <a href="#recentWorks">Portfolio</a>
-                <a href="#aboutme">About</a>
-                <a href="#contactme">Contact</a>
-            </div>
-
-
-            <a href="#" id="welcomeText">
-                Welcome
-            </a>
-            <a class="menuButton" onclick="showMenu()">
-                <img src="src/header/headerButton.svg" alt="">
-            </a>
-
-            <div class="menu">
-                
-                <div class="menu-content">
-                    <a href="#" class="menu-close" onclick="closeMenu()">
-                        <img src="./src/misc/close-menu.svg" alt="">
-                    </a>
-                    <a href="#recentWorks" onclick="closeMenu()">
-                        Portfolio
-                    </a>
-                    <a href="#aboutme" onclick="closeMenu()">
-                        About
-                    </a>
-                    <a href="#contactme" onclick="closeMenu()">
-                        Contact
-                    </a>
+<body onload="assignEventHandlers()">
+    <main>
+        <header>
+            <nav class="toolbar">
+                <div class="desktop-toolbar">
+                    <a href="#recentWorks">Portfolio</a>
+                    <a href="#aboutme">About</a>
+                    <a href="#contactme">Contact</a>
                 </div>
+
+
+                <a href="#" id="welcomeText">
+                    Welcome
+                </a>
+                <a class="menuButton">
+                    <img src="src/header/headerButton.svg" alt="">
+                </a>
+
+                <div class="menu">
+                    
+                    <div class="menu-content">
+                        <a href="#" class="menu-close" onclick="closeMenu()">
+                            <img src="./src/misc/close-menu.svg" alt="">
+                        </a>
+                        <a href="#recentWorks" onclick="closeMenu()">
+                            Portfolio
+                        </a>
+                        <a href="#aboutme" onclick="closeMenu()">
+                            About
+                        </a>
+                        <a href="#contactme" onclick="closeMenu()">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="introduction">
+            
+                <h1>
+                    Hey there. I’m Fabrizio 
+                </h1>
+                <!--Maybe I can use the id to give it a cool effect later-->
+                <h2 class="secondMainSentence">
+                    I’m a software developer
+                </h2>
+            <h3 class="secondaryText">
+                I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                don’t hestiate to contact me.
+            </h3>
+            <ul class="headersocials socials">
+                <li>
+                    <a href="https://twitter.com/fabriziogr211">
+                        <img src="./src/socials/twitter.svg" alt="Twitter Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/fabrizio-gomez-6a00801a3/">
+                        <img src="./src/socials/Linkedinicon.svg" alt="LinkedIn Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./src/socials/medium.svg" alt="Medium Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/KatIsCoding">
+                        <img src="./src/socials/github.svg" alt="Github Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="./src/socials/angellist.svg" alt="Angellist Icon">
+                    </a>
+                </li>
+            </ul>
+            <div class="arrow">
+                <img src="./src/misc/Action.svg" alt="arrow-resource">
             </div>
-        </nav>
-    </header>
-    <section class="introduction">
-        
-            <h1>
-                Hey there. I’m Fabrizio 
-            </h1>
-            <!--Maybe I can use the id to give it a cool effect later-->
-            <h2 class="secondMainSentence">
-                I’m a software developer
+        </section>
+        <section id="recentWorks" class="recentWorks">
+            <h2>
+                My Recent Works
             </h2>
-        <h3 class="secondaryText">
-            I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-            don’t hestiate to contact me.
-        </h3>
-        <ul class="headersocials socials">
-            <li>
-                <a href="https://twitter.com/fabriziogr211">
-                    <img src="./src/socials/twitter.svg" alt="Twitter Icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/fabrizio-gomez-6a00801a3/">
-                    <img src="./src/socials/Linkedinicon.svg" alt="LinkedIn Icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./src/socials/medium.svg" alt="Medium Icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/KatIsCoding">
-                    <img src="./src/socials/github.svg" alt="Github Icon">
-                </a>
-            </li>
-            <li>
-                <a href="#"><img src="./src/socials/angellist.svg" alt="Angellist Icon">
-                </a>
-            </li>
-        </ul>
-        <div class="arrow">
-            <img src="./src/misc/Action.svg" alt="arrow-resource">
+            <div id="indicator"></div>
+            
+            <div class="cardHandler centeredGrid">
+                <div id="template" class="card workCard">
+                    <div class="imagePlaceHolder"></div>
+                    <div class="workInfo">
+                        <h3  class="cardHeader">Multi-Post Stories <br>
+                            Gain + Glory</h3>
+                        <ul class="tagsHandler workTags">
+                            <li>Ruby on Rails</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                        </ul>
+                        <button type="button" class="button" onclick="showModal()">See Project</button>
+                    </div>
+                </div>
+
+                <div id="template2" class="card workCard">
+                    <div class="imagePlaceHolder"></div>
+                    <div class="workInfo">
+                        <h3  class="cardHeader">Multi-Post Stories <br>
+                            Gain + Glory</h3>
+                        <ul class="tagsHandler workTags">
+                            <li>Ruby on Rails</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                        </ul>
+                        <button type="button" class="button">See Project</button>
+                    </div>
+                </div>
+
+                <div id="template3" class="card workCard">
+                    <div class="imagePlaceHolder"></div>
+                    <div class="workInfo">
+                        <h3  class="cardHeader">Multi-Post Stories <br>
+                            Gain + Glory</h3>
+                        <ul class="tagsHandler workTags">
+                            <li>Ruby on Rails</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                        </ul>
+                        <button type="button" class="button">See Project</button>
+                    </div>
+                </div>
+
+                <div id="template4" class="card workCard">
+                    <div class="imagePlaceHolder"></div>
+                    <div class="workInfo">
+                        <h3  class="cardHeader">Multi-Post Stories <br>
+                            Gain + Glory</h3>
+                        <ul class="tagsHandler workTags">
+                            <li>Ruby on Rails</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                        </ul>
+                        <button type="button" class="button">See Project</button>
+                    </div>
+                </div>
+
+                <div id="template5" class="card workCard">
+                    <div class="imagePlaceHolder"></div>
+                    <div class="workInfo">
+                        <h3  class="cardHeader">Multi-Post Stories <br>
+                            Gain + Glory</h3>
+                        <ul class="tagsHandler workTags">
+                            <li>Ruby on Rails</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                        </ul>
+                        <button type="button" class="button">See Project</button>
+                    </div>
+                </div>
+
+                <div id="template6" class="card workCard">
+                    <div class="imagePlaceHolder"></div>
+                    <div class="workInfo">
+                        <h3  class="cardHeader">Multi-Post Stories <br>
+                            Gain + Glory</h3>
+                        <ul class="tagsHandler workTags">
+                            <li>Ruby on Rails</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                        </ul>
+                        <button type="button" class="button">See Project</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutme" class="aboutme">
+            <div class="sectionHeader aboutmeHeader">
+                <h2>About me</h2>
+                <h3> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                    don’t hestiate to contact me.</h3>
+                <button type="button" class="button">Get My Resume</button>
+            </div>
+            
+            <div class="cardHandler centeredGrid">
+            <div class="card aboutmeCard">
+                <img src="./src/aboutme/icon-languages.svg" alt="Languages img">
+                <h3 class="cardHeader aboutmeHeader">Languages</h3>
+                <ul class="tagsHandler aboutmeTags">
+                    <li>JavaScript</li>
+                    <li>Ruby</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+
+            <div class="card aboutmeCard">
+                <img src="./src/aboutme/icon-frameworks.svg" alt="Frameworks img">
+                <h3 class="cardHeader aboutmeHeader">Frameworks</h3>
+                <ul class="tagsHandler aboutmeTags">
+                    <li>Bootstrap</li>
+                    <li>Ruby on Rails</li>
+                    <li>RSpec</li>
+                    <li>Capybara</li>
+                    <li>Selenium</li>
+                </ul>
+            </div>
+
+            <div class="card aboutmeCard">
+                <img src="./src/aboutme/icon-skills.svg" alt="Skills img">
+                <h3 class="cardHeader aboutmeHeader">Skills</h3>
+                <ul class="tagsHandler aboutmeTags">
+                    <li>Codekit</li>
+                    <li>GitHub</li>
+                    <li>Codepen</li>
+                    <li>Gitlab</li>
+                    <li>Terminal</li>
+                </ul>
+            </div>
         </div>
-    </section>
-    <section id="recentWorks" class="recentWorks">
-        <h2>
-            My Recent Works
-        </h2>
-        <div id="indicator"></div>
-        
-        <div class="cardHandler centeredGrid">
-            <div class="card workCard">
-                <div class="imagePlaceHolder"></div>
-                <div class="workInfo">
-                    <h3  class="cardHeader">Multi-Post Stories <br>
-                        Gain + Glory</h3>
-                    <ul class="tagsHandler workTags">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <button type="button" class="button">See Project</button>
-                </div>
-            </div>
+        </section>
 
-            <div class="card workCard">
-                <div class="imagePlaceHolder"></div>
-                <div class="workInfo">
-                    <h3  class="cardHeader">Multi-Post Stories <br>
-                        Gain + Glory</h3>
-                    <ul class="tagsHandler workTags">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <button type="button" class="button">See Project</button>
-                </div>
-            </div>
+        <section id="contactme" class="contactme centeredGrid">
+            <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+            <form action="https://formspree.io/f/mleaonkj" method="POST" id="contactmeForm">
+                <input class="userinput" type="text" name="name" id="userName" maxlength="30" placeholder="Full name" required>
+                <input class="userinput" type="email" name="email" id="userEmail" placeholder="Email address" required>
+                <textarea class="userinput" name="message" id="userMessage" cols="30" rows="10" maxlength="500" placeholder="Enter your message" required></textarea>
+                <button id="sendContactMeForm" class="button" type="submit" form="contactmeForm">Get In touch</button>
+            </form>
+            
+        </section>
 
-            <div class="card workCard">
-                <div class="imagePlaceHolder"></div>
-                <div class="workInfo">
-                    <h3  class="cardHeader">Multi-Post Stories <br>
-                        Gain + Glory</h3>
-                    <ul class="tagsHandler workTags">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <button type="button" class="button">See Project</button>
-                </div>
-            </div>
+        <footer>
 
-            <div class="card workCard">
-                <div class="imagePlaceHolder"></div>
-                <div class="workInfo">
-                    <h3  class="cardHeader">Multi-Post Stories <br>
-                        Gain + Glory</h3>
-                    <ul class="tagsHandler workTags">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <button type="button" class="button">See Project</button>
-                </div>
-            </div>
-
-            <div class="card workCard">
-                <div class="imagePlaceHolder"></div>
-                <div class="workInfo">
-                    <h3  class="cardHeader">Multi-Post Stories <br>
-                        Gain + Glory</h3>
-                    <ul class="tagsHandler workTags">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <button type="button" class="button">See Project</button>
-                </div>
-            </div>
-
-            <div class="card workCard">
-                <div class="imagePlaceHolder"></div>
-                <div class="workInfo">
-                    <h3  class="cardHeader">Multi-Post Stories <br>
-                        Gain + Glory</h3>
-                    <ul class="tagsHandler workTags">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <button type="button" class="button">See Project</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="aboutme" class="aboutme">
-        <div class="sectionHeader aboutmeHeader">
-            <h2>About me</h2>
-            <h3> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                don’t hestiate to contact me.</h3>
-            <button type="button" class="button">Get My Resume</button>
-        </div>
-        
-        <div class="cardHandler centeredGrid">
-        <div class="card aboutmeCard">
-            <img src="./src/aboutme/icon-languages.svg" alt="Languages img">
-            <h3 class="cardHeader aboutmeHeader">Languages</h3>
-            <ul class="tagsHandler aboutmeTags">
-                <li>JavaScript</li>
-                <li>Ruby</li>
-                <li>HTML</li>
-                <li>CSS</li>
+            <ul class="footersocials socials">
+                <li>
+                    <a href="https://twitter.com/fabriziogr211">
+                        <img src="./src/socials/twitter.svg" alt="Twitter icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/fabrizio-gomez-6a00801a3/">
+                        <img src="./src/socials/Linkedinicon.svg" alt="LinkedIn Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./src/socials/medium.svg" alt="Medium Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/KatIsCoding">
+                        <img src="./src/socials/github.svg" alt="Github Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="./src/socials/angellist.svg" alt="Anglellist Icon">
+                    </a>
+                </li>
             </ul>
+            <h5>fabrigoru@gmail.com</h5>
+        </footer>
+    </main>
+    <!--Work Modals-->
+
+
+    <div class="modal">
+            <div class="modal-container">
+                <button type="button" id="close-modal" onclick="toggleModal()"></button>
+                
+                <img src="#" alt="Work Main Image" id="modal-image">
+                <h2 id="workName">
+                    ###
+                </h2>
+                <ul id="modal-technologies" class="tagsHandler workTags">
+                    <li>Ruby on Rails</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                </ul>
+
+                <h4 id="modal-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+                </h4>
+
+                <div id="modal-buttons">
+                    
+                    <button type="button" class="button">See Live</button>
+                    
+                    <button type="button" class="button">See Source</button>
+                    
+                </div>
         </div>
 
-        <div class="card aboutmeCard">
-            <img src="./src/aboutme/icon-frameworks.svg" alt="Frameworks img">
-            <h3 class="cardHeader aboutmeHeader">Frameworks</h3>
-            <ul class="tagsHandler aboutmeTags">
-                <li>Bootstrap</li>
-                <li>Ruby on Rails</li>
-                <li>RSpec</li>
-                <li>Capybara</li>
-                <li>Selenium</li>
-            </ul>
-        </div>
-
-        <div class="card aboutmeCard">
-            <img src="./src/aboutme/icon-skills.svg" alt="Skills img">
-            <h3 class="cardHeader aboutmeHeader">Skills</h3>
-            <ul class="tagsHandler aboutmeTags">
-                <li>Codekit</li>
-                <li>GitHub</li>
-                <li>Codepen</li>
-                <li>Gitlab</li>
-                <li>Terminal</li>
-            </ul>
-        </div>
     </div>
-    </section>
 
-    <section id="contactme" class="contactme centeredGrid">
-        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form action="https://formspree.io/f/mleaonkj" method="POST" id="contactmeForm">
-            <input class="userinput" type="text" name="name" id="userName" maxlength="30" placeholder="Full name" required>
-            <input class="userinput" type="email" name="email" id="userEmail" placeholder="Email address" required>
-            <textarea class="userinput" name="message" id="userMessage" cols="30" rows="10" maxlength="500" placeholder="Enter your message" required></textarea>
-            <button id="sendContactMeForm" class="button" type="submit" form="contactmeForm">Get In touch</button>
-        </form>
-        
-    </section>
-
-    <footer>
-
-        <ul class="footersocials socials">
-            <li>
-                <a href="https://twitter.com/fabriziogr211">
-                    <img src="./src/socials/twitter.svg" alt="Twitter icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/fabrizio-gomez-6a00801a3/">
-                    <img src="./src/socials/Linkedinicon.svg" alt="LinkedIn Icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./src/socials/medium.svg" alt="Medium Icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/KatIsCoding">
-                    <img src="./src/socials/github.svg" alt="Github Icon">
-                </a>
-            </li>
-            <li>
-                <a href="#"><img src="./src/socials/angellist.svg" alt="Anglellist Icon">
-                </a>
-            </li>
-        </ul>
-        <h5>fabrigoru@gmail.com</h5>
-    </footer>
-    
 </body>
 </html>
