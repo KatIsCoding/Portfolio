@@ -7,6 +7,68 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+main {
+  z-index: 0;
+}
+
+#modal-description {
+  font-weight: 400;
+  font-size: 90%;
+  line-height: 24px;
+  font-style: normal;
+  margin: 0;
+}
+
+#close-modal {
+  background-image: url("/src/misc/close-menuMobile.svg");
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  border: none;
+  border-radius: 8px;
+  align-self: flex-end;
+  z-index: 999999;
+  position: absolute;
+}
+
+.modal {
+  max-height: 90%;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  max-width: 90%;
+  min-width: 90%;
+  display: none;
+  transform: translate(-50%, -50%);
+  border: white;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.modal-container {
+  border-radius: 10px;
+  padding: 16px;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#modal-image {
+  width: 90%;
+  max-height: 220px;
+  border-radius: 8px;
+  align-self: center;
+  justify-self: center;
+}
+
 /* Header Section */
 
 .toolbar {
@@ -183,7 +245,19 @@ body {
 }
 
 #workName {
-  color: #3a4a42;
+  color: #172b4d;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: left;
+  align-self: self-end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#modal-technologies {
+  margin-bottom: 0;
 }
 
 /* Reusable */
@@ -281,6 +355,7 @@ body {
   padding-right: 10px;
   letter-spacing: 0.03em;
   font-style: normal;
+  cursor: pointer;
 }
 
 /* Button Methods */
@@ -471,6 +546,48 @@ footer h5 {
 }
 
 @media screen and (min-width: 1080px) {
+  #close-modal {
+    background-image: url("/src/misc/close-menu.svg");
+    align-self: baseline;
+  }
+
+  .modal-container {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+  }
+
+  #modal-image {
+    max-height: 50%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+
+  #workName {
+    order: 3;
+    max-width: 589px;
+    max-height: 82px;
+  }
+
+  #modal-technologies {
+    order: 3;
+    justify-content: flex-start;
+  }
+
+  #modal-description {
+    order: 3;
+  }
+
+  #modal-buttons {
+    order: 2;
+
+    /* margin-left: 40%; */
+    justify-self: flex-end;
+    margin-inline-start: auto;
+  }
+
   .secondaryText {
     width: 63%;
   }
