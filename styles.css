@@ -572,6 +572,7 @@ footer h5 {
 
   #modal-buttons {
     order: 2;
+
     /* margin-left: 40%; */
     justify-self: flex-end;
     margin-inline-start: auto;

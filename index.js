@@ -88,8 +88,8 @@ function toggleModal(workId) {
     const techs = searchID('modal-technologies');
     techs.innerHTML = '';
     const desc = searchID('modal-description');
-    //const demoButton = searchID('live-demo');
-    //const sourceButton = searchID('source');
+    // const demoButton = searchID('live-demo');
+    // const sourceButton = searchID('source');
 
     workName.innerHTML = elemData.name;
 
@@ -136,7 +136,7 @@ function assignEventHandlers() {
 }
 
 // To fix "no-unused-vars" error, however, is there a more intelligent way of doing this?
-showMenu();
-closeMenu();
-toggleModal();
-assignEventHandlers();
+exports.showMenu = showMenu;
+exports.closemenu = closeMenu;
+exports.toggleModal = toggleModal;
+exports.assignEventHandlers = assignEventHandlers;
