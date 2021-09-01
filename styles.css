@@ -13,9 +13,10 @@ main {
 
 #modal-description {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 90%;
   line-height: 24px;
   font-style: normal;
+  margin: 0;
 }
 
 #close-modal {
@@ -29,6 +30,7 @@ main {
   border-radius: 8px;
   align-self: flex-end;
   z-index: 999999;
+  position: absolute;
 }
 
 .modal {
@@ -250,6 +252,12 @@ main {
   line-height: 44px;
   text-align: left;
   align-self: self-end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#modal-technologies {
+  margin-bottom: 0;
 }
 
 /* Reusable */
@@ -347,6 +355,7 @@ main {
   padding-right: 10px;
   letter-spacing: 0.03em;
   font-style: normal;
+  cursor: pointer;
 }
 
 /* Button Methods */
@@ -553,6 +562,7 @@ footer h5 {
   #modal-image {
     max-height: 50%;
     margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 
   #workName {
