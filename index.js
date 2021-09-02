@@ -167,6 +167,29 @@ function assignEventHandlers() {
   });
 }
 
+const userInputs = document.getElementsByClassName('userinput');
+let contactMeForm = {};
+
+function addContactmeHandlers() {
+  Array.prototype.forEach.call(userInputs, (userInput) => {
+    userInput.addEventListener('input', () => {
+      contactMeForm[userInput.id] = userInput.value;
+      localStorage.setItem('contactmeForm', JSON.stringify(contactMeForm));
+    });
+  });
+}
+
+function populateForms() {
+  if (localStorage.key('contactmeForm') !== null) {
+    contactMeForm = JSON.parse(localStorage.getItem('contactmeForm'));
+  }
+  Array.prototype.forEach.call(userInputs, (element) => {
+    if (contactMeForm[element.id] !== undefined) {
+      element.value = contactMeForm[element.id];
+    }
+  });
+}
+
 // To fix "no-unused-vars" error, however, is there a more intelligent way of doing this?
 // Yes there it is ;)
 
@@ -175,4 +198,6 @@ document.onreadystatechange = () => {
   assignEventHandlers();
   showMenu();
   closeMenu();
+  addContactmeHandlers();
+  populateForms();
 };
