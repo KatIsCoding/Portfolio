@@ -11,6 +11,11 @@ main {
   z-index: 0;
 }
 
+.workImage {
+  height: inherit;
+  width: inherit;
+}
+
 #modal-description {
   font-weight: 400;
   font-size: 90%;
@@ -62,11 +67,20 @@ main {
 }
 
 #modal-image {
-  width: 90%;
+  /* width: 90%; */
   max-height: 220px;
   border-radius: 8px;
   align-self: center;
   justify-self: center;
+}
+
+.modal-image {
+  display: flex;
+  width: 90%;
+  max-height: 50%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  justify-content: center;
 }
 
 /* Header Section */
@@ -251,7 +265,7 @@ main {
   font-size: 32px;
   line-height: 44px;
   text-align: left;
-  align-self: self-end;
+  align-self: self-start;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -575,7 +589,7 @@ footer h5 {
   }
 
   #modal-image {
-    max-height: 50%;
+    /* max-height: 50%; */
     margin-inline-start: auto;
     margin-inline-end: auto;
   }
